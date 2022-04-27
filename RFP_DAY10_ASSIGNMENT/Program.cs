@@ -4,7 +4,7 @@ using RFP_DAY10_ASSIGNMENT;
 int Is_Full_Time = 1;
 int Is_Part_Time = 2;
 int Emp_Rate_Per_Hour = 20;
-Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PART PROGRAM\n4 for SWITCH_WAGE PROGRAM");
+Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PART PROGRAM\n4 for SWITCH_WAGE PROGRAM\n5 for Working_20_Days PROGRAM");
 int Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -22,12 +22,16 @@ switch (Option)
         break;
 
     case 3:
-        ParttimeUc obj5 = new ParttimeUc();
-        obj5.Wage(Is_Full_Time, Is_Part_Time, Emp_Rate_Per_Hour);
+        ParttimeUc obj3 = new ParttimeUc();
+        obj3.Wage(Is_Full_Time, Is_Part_Time, Emp_Rate_Per_Hour);
         break;
 
     case 4:
-        SwitchWageUc obj6 = new SwitchWageUc();
-        obj6.EmpWage();
+        SwitchWageUc obj4 = new SwitchWageUc();
+        obj4.EmpWage();
+        break;
+    case 5:
+        Working20DaysUc obj5 = new Working20DaysUc();
+        obj5.Emp20DaysWage();
         break;
 }
