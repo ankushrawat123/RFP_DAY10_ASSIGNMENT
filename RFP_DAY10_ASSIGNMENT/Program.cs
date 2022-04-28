@@ -4,7 +4,7 @@ using RFP_DAY10_ASSIGNMENT;
 int Is_Full_Time = 1;
 int Is_Part_Time = 2;
 int Emp_Rate_Per_Hour = 20;
-Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PARTTIME PROGRAM\n4 for SWITCH_WAGE PROGRAM\n5 for Working_20_Days PROGRAM \n6 for MAXIMUM_100_HOURS PROGRAM  \n7 for Wage_Method PROGRAM ");
+Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PARTTIME PROGRAM\n4 for SWITCH_WAGE PROGRAM\n5 for Working_20_Days PROGRAM \n6 for MAXIMUM_100_HOURS PROGRAM \n7 for Wage_Method PROGRAM ");
 int Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
