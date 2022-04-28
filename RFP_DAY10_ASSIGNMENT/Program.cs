@@ -4,7 +4,7 @@ using RFP_DAY10_ASSIGNMENT;
 int Is_Full_Time = 1;
 int Is_Part_Time = 2;
 int Emp_Rate_Per_Hour = 20;
-Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PARTTIME PROGRAM\n4 for SWITCH_WAGE PROGRAM\n5 for Working_20_Days PROGRAM \n6 for MAXIMUM_100_HOURS PROGRAM \n7 for Wage_Method PROGRAM ");
+Console.WriteLine("Enter \n1 for ATTENDANCE PROGRAM \n2 for WAGE PROGRAM \n3 for PARTTIME PROGRAM\n4 for SWITCH_WAGE PROGRAM\n5 for Working_20_Days PROGRAM \n6 for MAXIMUM_100_HOURS PROGRAM \n7 for Wage_Method PROGRAM \n8 for Wage_To_Multiple_Company PROGRAM ");
 int Option = Convert.ToInt32(Console.ReadLine());
 switch (Option)
 {
@@ -46,7 +46,13 @@ switch (Option)
         obj7.wageMethod();
         break;
 
-    
+    case 8:
+        Wage_To_Multiple_Company obj8 = new Wage_To_Multiple_Company();
+        Console.WriteLine("Company - 1");
+        obj8.EmpWageForCompany("DMart", 20, 2, 10);
+        Console.WriteLine("Company - 2");
+        obj8.EmpWageForCompany("Reliance", 10, 4, 20);
+        break;
 
-    
+
 }
