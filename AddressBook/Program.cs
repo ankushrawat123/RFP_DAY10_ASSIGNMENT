@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AddressBook;
-Console.WriteLine("Welcome to ADDRESS BOOK !");
+Console.WriteLine("Welcome to ADDRESS BOOK SYSTEM !");
 Contact obj = new Contact();
 CreateContact cont = new CreateContact();
-Console.WriteLine("Enter \n1 for CREATE CONTACT IN ADDRESSBOOK PROGRAM \n2 for USER INPUT CONTACT IN ADDRESSBOOK PROGRAM \n3 for EDIT CONTACTS IN ADDRESSBOOK PROGRAM\n");
+Console.WriteLine("Enter \n1 for CREATE CONTACT IN ADDRESSBOOK PROGRAM \n2 for USER INPUT CONTACT IN ADDRESSBOOK PROGRAM \n3 for EDIT CONTACTS IN ADDRESSBOOK PROGRAM\n4 for DELETING CONTACT PROGRAM\n");
 int num = Convert.ToInt32(Console.ReadLine());
 
 switch (num)
@@ -22,5 +22,9 @@ switch (num)
     case 3:
         EditContacts obj3 = new EditContacts();
         obj3.editContacts();
+        break;
+    case 4:
+        DeleteContactAddressBook obj4 = new DeleteContactAddressBook();
+        obj4.deleteContact();
         break;
 }
