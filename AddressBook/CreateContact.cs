@@ -10,8 +10,8 @@ namespace AddressBook
 
     public class CreateContact
     {
-       
-        public List<Contact> ContactBook= new List<Contact>();
+
+        public List<Contact> ContactBook = new List<Contact>();
         public void createContactMethod()
         {
             Contact obj1 = new Contact();
