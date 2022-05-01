@@ -15,13 +15,13 @@ namespace AddressBook
         public void createContactMethod()
         {
             Contact obj1 = new Contact();
-            obj1.FirstName = "Rahul";
+            obj1.FirstName = "Ankush";
             obj1.LastName = "Rawat";
-            obj1.City = "Chandigarh";
-            obj1.State = "Punjab";
-            obj1.ZipCode = "110087";
-            obj1.PhoneNumber = " 9876554321";
-            obj1.E_Mail = "PunjabThePower@344";
+            obj1.City = "Delhi";
+            obj1.State = "Delhi";
+            obj1.ZipCode = "110096";
+            obj1.PhoneNumber = "9876554321";
+            obj1.E_Mail = "ankushrwt344@gmail.com";
             ContactBook.Add(obj1);
             Console.WriteLine("\nADDRESS BOOK Is Created ");
         }
