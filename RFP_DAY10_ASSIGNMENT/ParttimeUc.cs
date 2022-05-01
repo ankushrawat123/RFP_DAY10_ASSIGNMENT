@@ -27,7 +27,6 @@ namespace RFP_DAY10_ASSIGNMENT
             {
                 empHrs = 0;
             }
-
             empWage = empHrs * Emp_Rate_Per_Hour;
             Console.WriteLine("Employee wage : " + empWage);
         }
