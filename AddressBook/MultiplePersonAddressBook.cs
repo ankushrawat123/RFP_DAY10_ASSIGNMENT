@@ -12,7 +12,7 @@ namespace AddressBook
         AddContactUserInput ObjAdd = new AddContactUserInput();
         public void addMultipleContact()
         {
-            Console.WriteLine("Enter the Number of Person Contact, you will enter");
+            Console.WriteLine("Enter the Number of Contact, you want to add");
             int Num =Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= Num;i++)
             {
