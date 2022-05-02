@@ -6,22 +6,33 @@ using System.Threading.Tasks;
 
 namespace AddressBook
 {
-    internal class EditContacts
+    internal class MultiplePersonAddressBook
     {
-        AddContactUserInput ObjAdd = new AddContactUserInput();  
-        public void editContacts()
+   
+        AddContactUserInput ObjAdd = new AddContactUserInput();
+        public void addMultipleContact()
         {
-            Console.WriteLine(" \nEnter the Contact Information first AddressBook program will take input\n ");
-
-            ObjAdd.addContact();
-            Console.WriteLine("\nEnter the FirstName of contact that You want to Edit");
-            String name = Console.ReadLine().ToLower();
-
-            foreach (var info in ObjAdd.ContactBook)
+            Console.WriteLine("Enter the Number of Person Contact, you will enter");
+            int Num =Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= Num;i++)
             {
-                if (info.FirstName == name)
+                ObjAdd.addContact();
+            }
+        }
+
+        public void printContact()
+        {
+            ObjAdd.printAddedContact();
+        }
+
+        public void editMultiContact()
+        {
+            Console.WriteLine("\nEnter the FirstName of the Contact person whose contact you want to Edit\n");
+            String Name = Console.ReadLine().ToLower();
+            foreach(var info in ObjAdd.ContactBook)
+            {
+                if (info.FirstName == Name)
                 {
-                    
                     Console.WriteLine("Enter the given number for EDITING \n1 for FIRSTNAME \n2 for LASTNAME \n3 for CITY \n4 for STATE \n5 for ZIPCODE \n6 for PHONENUMBER \n7 for E_MAIL\n");
                     int opt = Convert.ToInt32(Console.ReadLine());
 
@@ -63,13 +74,32 @@ namespace AddressBook
                             info.E_Mail = Console.ReadLine();
                             break;
                     }
-                    ObjAdd.printAddedContact();
+
                 }
                 else
                 {
                     Console.WriteLine("Name doesn't Match, NO PERSON WITH THIS CONTACT");
                 }
             }
+            ObjAdd.printAddedContact();
         }
+
+        public void deleteMultiContact()
+        {
+            Console.WriteLine("Enter the FIRSTNAME of person you would like to remove");
+            String firstName = Console.ReadLine().ToLower();
+            foreach(var info in ObjAdd.ContactBook )
+            {
+                if(info.FirstName == firstName)
+                {
+                    ObjAdd.ContactBook.Remove(info);
+                    Console.WriteLine("Contact removed Successfully");
+                    break;
+                }
+               
+            }
+        }
+
+
     }
 }
