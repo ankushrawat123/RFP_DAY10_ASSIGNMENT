@@ -38,8 +38,7 @@ namespace AddressBook
                 Console.WriteLine("State is "+ obje.State);
                 Console.WriteLine("ZipCode is "+ obje.ZipCode);
                 Console.WriteLine("PhoneNumber is "+ obje.PhoneNumber);
-                Console.WriteLine("E_Mail is "+ obje.E_Mail);
-               
+                Console.WriteLine("E_Mail is "+ obje.E_Mail);      
             }
         }
     }
