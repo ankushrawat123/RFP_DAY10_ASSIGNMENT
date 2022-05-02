@@ -12,7 +12,7 @@ namespace AddressBook
         public void editContacts()
         {
 
-            Console.WriteLine("\nEnter the Contact Information first AddressBook program will take input\n");
+            Console.WriteLine(" \nEnter the Contact Information first AddressBook program will take input\n");
 
             Console.WriteLine(" \nEnter the Contact Information first AddressBook program will take input\n ");
 
@@ -66,9 +66,13 @@ namespace AddressBook
                             info.E_Mail = Console.ReadLine();
                             break;
                     }
+                    ObjAdd.printAddedContact();
+                }
+                else
+                    {
+                    Console.WriteLine("Name doesn't Match, NO PERSON WITH THIS CONTACT");
                 }
             }
-            ObjAdd.printAddedContact();
         }
     }
 }
