@@ -11,7 +11,11 @@ namespace AddressBook
         AddContactUserInput ObjAdd = new AddContactUserInput();  
         public void editContacts()
         {
+
             Console.WriteLine("\nEnter the Contact Information first AddressBook program will take input\n");
+
+            Console.WriteLine(" \nEnter the Contact Information first AddressBook program will take input\n ");
+
             ObjAdd.addContact();
             Console.WriteLine("\nEnter the FirstName of contact that You want to Edit");
             String name = Console.ReadLine().ToLower();
